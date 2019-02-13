@@ -41,6 +41,8 @@ set JMETER_CMD_LINE_ARGS="-Djava.rmi.server.hostname=xxx.xxx.xxx.xxx 改为slave
 - - - -
 * 使用
 ```
+master
+-----------------------------------------------
 命令行
 ./jmeter -n -t plan.jmx -R slaveIp_1:port,slaveIp_2:port -l newfile.jtl -e -o html_folder
 UI
@@ -48,6 +50,10 @@ UI
 创建计划脚本/打开计划脚本
 点击Run->Remote Start-> slaveIp:prot(单个运行配置文件中配置的slave)
 点击Run->Remote Start All (运行所有slave)
+
+slave
+----------------------------------------------
+./jmeter-server
 ```
 
 
