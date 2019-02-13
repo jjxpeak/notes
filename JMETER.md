@@ -28,6 +28,8 @@ server.rmi.ssl.disable=true
 ------------------------------------------------
 JMETER_HOME=/Users/peak/Downloads/apache-jmeter-5.0
 
+修改启动脚本
+------------------------------------------------
 修改jmeter-server(linux) 约30行
 # One way to fix this is to define RMI_HOST_DEF below
 #RMI_HOST_DEF='-Djava.rmi.server.hostname=xxx.xxx.xxx.xxx 改为slave ip'
