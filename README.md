@@ -11,7 +11,7 @@
 ```
 修改配置文件 jmeter.properties 
 # Remote Hosts - comma delimited
-remote_hosts= 改为slave的ip:prot(多个已,分割)
+remote_hosts=改为slave的ip:prot(多个已,分割)
 -----------------------------------------------
 # Set this if you don't want to use SSL for RMI
 server.rmi.ssl.disable=true
@@ -30,11 +30,11 @@ JMETER_HOME=/Users/peak/Downloads/apache-jmeter-5.0
 
 修改jmeter-server(linux) 约30行
 # One way to fix this is to define RMI_HOST_DEF below
-#RMI_HOST_DEF=-Djava.rmi.server.hostname=改为slave ip
+#RMI_HOST_DEF='-Djava.rmi.server.hostname=xxx.xxx.xxx.xxx 改为slave ip'
 
 修改jmeter-server.bat(win) 约57行
 rem On NT/2K grab all arguments at once
-set JMETER_CMD_LINE_ARGS=%* -Djava.rmi.server.hostname=改为slave ip
+set JMETER_CMD_LINE_ARGS="-Djava.rmi.server.hostname=xxx.xxx.xxx.xxx 改为slave ip"
 ```
 - - - -
 * 使用
